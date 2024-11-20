@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.svg {
+    width: 20px;
+}
+.main {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.div-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  
+    margin-top: 100px;
+    
+}
+.grid-container {
+    width: 500px;
+    height: 300px;
+background-color: rgb(163, 163, 163);
+color: rgb(242, 242, 242);
+display: grid;
+justify-content: center;
+align-items: center;
+padding: 20px;
+border: 4px;
+border-radius: 20px;
+}
+
+
+svg {
+    color: rgb(228, 228, 228);
+width: 10px;
+height: 10px;
+
+}
+/* li {
+    color: rgb(0, 0, 0);
+    width: 50px;
+height: 50px;
+text-wrap: row;
+} */
+.grid-1 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+ul {
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 35px;
+    row-gap: 30px;
+}
+body {
+    background-color: rgb(54, 54, 54);
+}
+ul li {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:1080px){
+    .div-container {
+        grid-template-columns: 1fr;
+    }
+    .grid-container {
+        width: 300px;
+        height: 500px; 
+    }
+    .div-container {
+       
+        margin-top: 100px;
+        
+    }
+    svg {
+        color: rgb(228, 228, 228);
+    width: 30px;
+    height: 30px; 
+    }
+       
+}
+
+
+
+@media screen and (max-width:600px){
+    .div-container {
+     
+        margin-top: 100px;
+        
+    } .div-container {
+        grid-template-columns: 1fr;
+    }
+    .grid-container {
+        width: 300px;
+        height: 500px; 
+    }
+    ul {
+        grid-template-columns: 1fr;
+    }
+    .div-container {
+       
+        margin-top: 100px;
+        
+    }
+    svg {
+        color: rgb(228, 228, 228);
+    width: 20px;
+    height: 20px; 
+    }
+}
